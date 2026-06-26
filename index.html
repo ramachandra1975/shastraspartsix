@@ -1289,5 +1289,714 @@ Dharmaśāstra's ritual purity laws — particularly those governing food, bodil
   window.addEventListener('scroll', updateActive, {passive:true});
 })();
 </script>
+  <!-- ============================================================
+     ŚĀSTRA KNOWLEDGE ECOLOGY — EXPANDED ABSTRACT (6 pages)
+     Paste this entire block just before </body> tag.
+     No other changes needed.
+     Section id: #expanded-abstract
+     ============================================================ -->
+
+<style>
+/* Abstract expansion — non-conflicting additions */
+.abs-cover {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 0 50px;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.abs-cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(122,31,43,0.09), transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(201,168,106,0.05), transparent 55%);
+  pointer-events: none;
+}
+.abs-eyebrow {
+  font-family: "Cinzel", serif;
+  font-size: 9.5px;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--saffron);
+  margin-bottom: 22px;
+}
+.abs-main-title {
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+  color: var(--cream);
+  line-height: 1.25;
+  max-width: 820px;
+  margin-bottom: 10px;
+}
+.abs-dn-line {
+  font-family: "Noto Serif Devanagari", serif;
+  font-size: 22px;
+  color: var(--gold-b);
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+.abs-tagline {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 19px;
+  color: var(--dim);
+  max-width: 740px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+.abs-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+.abs-tag {
+  font-family: "Cinzel", serif;
+  font-size: 9px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  border: 1px solid var(--border);
+  color: var(--faint);
+  padding: 4px 12px;
+  border-radius: 3px;
+}
+
+/* Running head */
+.abs-running-head {
+  font-family: "Source Code Pro", monospace;
+  font-size: 10px;
+  letter-spacing: .12em;
+  color: var(--faint);
+  text-transform: uppercase;
+  margin: 52px 0 26px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Dropcap */
+.dropcap::first-letter {
+  font-family: "Cinzel", serif;
+  font-size: 5.2em;
+  line-height: .78;
+  float: left;
+  margin: 0 10px 0 0;
+  color: var(--crimson-b);
+  font-weight: 700;
+}
+
+/* Pull quote — full width */
+.abs-pullquote {
+  border-top: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+  padding: 26px 0;
+  margin: 36px 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--cream);
+  line-height: 1.6;
+  text-align: center;
+}
+.abs-pullquote cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: .1em;
+  color: var(--faint);
+  font-style: normal;
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+}
+
+/* Columned abstract text */
+.abs-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  margin: 22px 0;
+}
+@media (max-width: 700px) { .abs-two-col { grid-template-columns: 1fr; gap: 0; } }
+.abs-two-col p { font-size: 15.5px; color: var(--dim); line-height: 1.82; margin-bottom: 14px; }
+
+/* Highlighted proposition */
+.abs-proposition {
+  background: linear-gradient(135deg, rgba(122,31,43,0.07), rgba(201,168,106,0.05));
+  border: 1px solid rgba(201,168,106,0.2);
+  border-radius: 6px;
+  padding: 26px 30px;
+  margin: 30px 0;
+  position: relative;
+}
+.abs-proposition::before {
+  content: "PROPOSITION";
+  position: absolute;
+  top: -10px;
+  left: 24px;
+  font-family: "Cinzel", serif;
+  font-size: 8.5px;
+  letter-spacing: .22em;
+  background: var(--bg);
+  padding: 0 10px;
+  color: var(--gold);
+}
+.abs-proposition p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18.5px;
+  color: var(--text);
+  line-height: 1.78;
+  margin: 0;
+}
+
+/* Six-dimension grid */
+.abs-six-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 28px 0;
+}
+@media (max-width: 700px) { .abs-six-grid { grid-template-columns: 1fr 1fr; } }
+.abs-six-cell {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 16px 16px 14px;
+  background: var(--panel);
+  position: relative;
+}
+.abs-six-cell .asix-num {
+  font-family: "Cinzel", serif;
+  font-size: 28px;
+  color: rgba(201,168,106,0.18);
+  line-height: 1;
+  position: absolute;
+  top: 10px;
+  right: 14px;
+}
+.abs-six-cell .asix-label {
+  font-family: "Cinzel", serif;
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--saffron);
+  margin-bottom: 7px;
+}
+.abs-six-cell p {
+  font-size: 13.5px;
+  color: var(--dim);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Marginal note */
+.abs-marginal {
+  float: right;
+  width: 34%;
+  margin: 0 0 20px 24px;
+  padding: 13px 15px;
+  border-left: 2px solid var(--crimson-b);
+  background: var(--panel);
+  font-size: 13.5px;
+  color: var(--dim);
+  line-height: 1.65;
+}
+.abs-marginal .am-head {
+  font-family: "Cinzel", serif;
+  font-size: 9px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--crimson-b);
+  margin-bottom: 6px;
+}
+@media (max-width: 700px) { .abs-marginal { float: none; width: 100%; margin: 16px 0; } }
+
+/* Numbered claim list */
+.abs-claims {
+  counter-reset: claim-counter;
+  margin: 24px 0;
+  list-style: none;
+  padding: 0;
+}
+.abs-claims li {
+  counter-increment: claim-counter;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 18px;
+  font-size: 15.5px;
+  color: var(--dim);
+  line-height: 1.78;
+}
+.abs-claims li::before {
+  content: counter(claim-counter, upper-roman);
+  font-family: "Cinzel", serif;
+  font-size: 11px;
+  color: var(--gold);
+  min-width: 28px;
+  padding-top: 3px;
+  letter-spacing: .08em;
+}
+
+/* Skt emphasis inline */
+.skt-inline {
+  font-family: "Noto Serif Devanagari", serif;
+  font-size: 1.05em;
+  color: var(--gold-b);
+}
+
+/* wide rule */
+.abs-rule {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 44px 0 38px;
+}
+.abs-rule-gold {
+  border: none;
+  border-top: 1px solid var(--gold);
+  opacity: .3;
+  margin: 44px 0 38px;
+}
+
+/* Timeline band */
+.abs-timeline {
+  display: flex;
+  gap: 0;
+  margin: 28px 0;
+  overflow-x: auto;
+}
+.abs-tl-item {
+  flex: 1;
+  min-width: 110px;
+  border-right: 1px solid var(--border);
+  padding: 14px 14px 12px;
+  background: var(--panel);
+}
+.abs-tl-item:last-child { border-right: none; }
+.abs-tl-item:nth-child(even) { background: var(--panel2); }
+.abs-tl-date {
+  font-family: "Cinzel", serif;
+  font-size: 11px;
+  color: var(--gold);
+  margin-bottom: 5px;
+}
+.abs-tl-item p {
+  font-size: 12.5px;
+  color: var(--dim);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* vector summary row */
+.abs-vector-row {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(58,46,34,.35);
+}
+.abs-vector-row:last-child { border-bottom: none; }
+.avr-num {
+  font-family: "Cinzel", serif;
+  font-size: 22px;
+  color: var(--crimson-b);
+  line-height: 1;
+  padding-top: 4px;
+}
+.avr-body h5 {
+  font-family: "Cinzel", serif;
+  font-size: 12px;
+  color: var(--gold-b);
+  margin-bottom: 5px;
+  letter-spacing: .04em;
+}
+.avr-body p {
+  font-size: 14px;
+  color: var(--dim);
+  line-height: 1.68;
+  margin: 0;
+}
+
+/* impact row */
+.abs-impact-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+.abs-impact-item {
+  flex: 1;
+  min-width: 120px;
+  background: var(--panel2);
+  border-top: 3px solid var(--crimson);
+  padding: 14px 15px 12px;
+  border-radius: 0 0 4px 4px;
+}
+.abs-impact-item:nth-child(2) { border-top-color: var(--gold); }
+.abs-impact-item:nth-child(3) { border-top-color: var(--jade-b); }
+.abs-impact-item:nth-child(4) { border-top-color: var(--v1b); }
+.abs-impact-item .aii-head {
+  font-family: "Cinzel", serif;
+  font-size: 9px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 7px;
+}
+.abs-impact-item p {
+  font-size: 13.5px;
+  color: var(--dim);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.abs-clearfix::after { content: ""; display: table; clear: both; }
+</style>
+
+<!-- ─────────────────────────────────────────────────────────────
+     INJECT NAV LINK
+───────────────────────────────────────────────────────────── -->
+<script>
+(function(){
+  var sidenav = document.querySelector('.sidenav');
+  if(!sidenav) return;
+  var extLabel = Array.from(sidenav.querySelectorAll('.sn-group-label'))
+    .find(function(el){ return el.textContent.trim() === 'Extension Sections'; });
+  var insertBefore = extLabel || sidenav.querySelector('a[href="#references"]');
+
+  var grp = document.createElement('div');
+  grp.className = 'sn-group-label';
+  grp.textContent = 'Expanded Abstract';
+  sidenav.insertBefore(grp, insertBefore);
+
+  [
+    {href:'#abs-genesis',    text:'Abstract · I — Genesis of the Question'},
+    {href:'#abs-claim',      text:'Abstract · II — The Central Claim'},
+    {href:'#abs-ecology',    text:'Abstract · III — Knowledge Ecology Defined'},
+    {href:'#abs-six-angles', text:'Abstract · IV — Beyond the Six Angles'},
+    {href:'#abs-vectors',    text:'Abstract · V — Six Research Vectors'},
+    {href:'#abs-stakes',     text:'Abstract · VI — Scholarly Stakes'},
+  ].forEach(function(nl){
+    var a = document.createElement('a');
+    a.className = 'sn-link';
+    a.href = nl.href;
+    a.textContent = nl.text;
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var el = document.getElementById(nl.href.replace('#',''));
+      if(el) el.scrollIntoView({behavior:'smooth'});
+    });
+    sidenav.insertBefore(a, insertBefore);
+  });
+})();
+</script>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     EXPANDED ABSTRACT — SECTION ANCHOR
+═══════════════════════════════════════════════════════════════ -->
+<div id="expanded-abstract">
+
+<!-- Abstract Cover Block -->
+<div class="abs-cover" id="abs-cover">
+  <div class="abs-eyebrow">Expanded Abstract · Six Pages · Module I of V</div>
+  <div class="abs-dn-line">शास्त्रोद्भवः स्वयंशोधन-ज्ञानपारिस्थितिकी — विस्तृतसारः</div>
+  <h2 class="abs-main-title">Śāstra as Self-Correcting Knowledge Ecology: An Extended Abstract</h2>
+  <p class="abs-tagline">A six-part discursive abstract tracing the argument from its historical motivations through its central theoretical claims, its six research vectors, and the scholarly stakes — structured for rapid orientation by the specialist reader.</p>
+  <div class="abs-meta-row">
+    <span class="abs-tag">White Paper Series</span>
+    <span class="abs-tag">Seventh Angle</span>
+    <span class="abs-tag">Sixteen Śāstras</span>
+    <span class="abs-tag">Knowledge Ecology</span>
+    <span class="abs-tag">Bādhā Cascade Theory</span>
+    <span class="abs-tag">Inter-Śāstric Networks</span>
+    <span class="abs-tag">Sanskrit NLP</span>
+    <span class="abs-tag">Epistemology of Science</span>
+  </div>
+</div>
+
+<!-- ─── PAGE 1 ─── -->
+<div class="abs-running-head" id="abs-genesis">
+  <span>Expanded Abstract · Page I of VI</span>
+  <span>The Genesis of the Question</span>
+</div>
+
+<p class="dropcap">The question from which this entire research programme proceeds was not asked by the six-angle study of the sixteen classical śāstras that preceded it — and the omission was deliberate. That study asked, with sustained rigour across six analytical perspectives (textual, philosophical, comparative, scientific-mathematical, historical, and epistemological), what each śāstra knows and how it knows it. It did not ask how the tradition as a whole manages the knowledge it collectively holds: how errors in one discipline are detected by another, how corrections propagate across disciplinary boundaries, why a system that had no central institutional arbiter and no single canonical authority managed to remain, for two and a half millennia, a living and generative intellectual tradition. This omission was deliberate because the preceding study's six angles were all, in a precise technical sense, <em>intra-disciplinary</em> — they studied each śāstra from within its own framework and on its own terms. The question of how the disciplines' frameworks relate to each other, conflict with each other, and correct each other is a different kind of question entirely. It is the question of the seventh angle.</p>
+
+<div class="abs-marginal abs-clearfix">
+  <div class="am-head">What this abstract covers</div>
+  This expanded abstract traces the paper's argument across six pages: genesis of the question (I), the central claim and its novelty (II), the knowledge ecology concept and its application to the śāstric tradition (III), the relationship between the seventh angle and the six preceding angles (IV), a summary of each of the six research vectors (V), and the scholarly stakes of the programme — what would be gained by its completion (VI).
+</div>
+
+<p>The genesis of the question is historical before it is theoretical. The classical śāstric tradition — by which we mean the sixteen disciplines formally examined in the preceding study: Vyākaraṇa, Mīmāṃsā, Nyāya, Vaiśeṣika, Sāṃkhya, Yoga, Vedānta, Dharmaśāstra, Arthaśāstra, Āyurveda, Jyotiṣa, Gandharvaśāstra (Sangīta-śāstra), Nāṭyaśāstra, Śilpaśāstra, Ālaṃkāraśāstra, and Kāmaśāstra — persisted as a living, generative intellectual enterprise from at least the time of Pāṇini (c. 350 BCE) through the systematic British colonial suppression of indigenous educational institutions in the early nineteenth century. That span covers approximately 2,200 years of continuous intellectual production under conditions that no modern research institution has faced: the destruction of major centres of learning by successive military campaigns, the deliberate replacement of Sanskrit-medium education with English-medium institutions, the disruption of the patronage networks that had sustained the tradition for centuries, and the eventual physical elimination of the manuscript repositories in which the tradition's accumulated knowledge was stored.</p>
+
+<p>Any honest intellectual history of the śāstric tradition must account for two things simultaneously: its extraordinary longevity and productivity under these conditions, and the genuine internal crises and failures that this white paper does not conceal (see §15 of the main text). The knowledge ecology model is an attempt to account for the longevity and productivity. The failures are not embarrassments to be excused — they are boundary conditions that test the model's explanatory power and, when the model survives them, strengthen its claim to general validity.</p>
+
+<div class="abs-timeline">
+  <div class="abs-tl-item">
+    <div class="abs-tl-date">c. 800 BCE</div>
+    <p>Earliest Brāhmaṇa texts systematize Vedic ritual commentary — first cross-disciplinary citation network visible in proto-śāstric form</p>
+  </div>
+  <div class="abs-tl-item">
+    <div class="abs-tl-date">c. 350 BCE</div>
+    <p>Pāṇini's Aṣṭādhyāyī establishes Sanskrit grammar as universal validator — the knowledge ecology gains its kernel</p>
+  </div>
+  <div class="abs-tl-item">
+    <div class="abs-tl-date">c. 150 BCE</div>
+    <p>Patañjali's Mahābhāṣya — highest cross-disciplinary citation density node in the early classical period</p>
+  </div>
+  <div class="abs-tl-item">
+    <div class="abs-tl-date">c. 150–800 CE</div>
+    <p>Buddhist-Brahmanical correction wars: Nāgārjuna, Dignāga, Dharmakīrti cascades reshape the network's topology</p>
+  </div>
+  <div class="abs-tl-item">
+    <div class="abs-tl-date">c. 800–1000</div>
+    <p>Advaita-Vaiśiṣṭādvaita-Dvaita correction cycles; Abhinavagupta's lateral cascade across aesthetics, metaphysics, language philosophy</p>
+  </div>
+  <div class="abs-tl-item">
+    <div class="abs-tl-date">c. 1325–1600</div>
+    <p>Navya-Nyāya upgrade: single correction event propagates through every śāstric discipline within 250 years</p>
+  </div>
+  <div class="abs-tl-item">
+    <div class="abs-tl-date">1813–1858</div>
+    <p>Colonial suppression of Sanskrit-medium institutions: the ecology loses its institutional substrate; tradition fractures into isolated nodes</p>
+  </div>
+</div>
+
+<p>The historical question — how did it last? — is also a structural question: what properties of its architecture made it resilient? The answer this paper proposes is not the one that dominates existing scholarship. The standard answer points to oral transmission, the gurukula system, the force of religious observance, and the social prestige of the paṇḍit class as the primary preservation mechanisms. These answers are not wrong — they identify real mechanisms — but they are insufficient. Oral transmission and institutional prestige explain how knowledge was reproduced; they do not explain why the tradition remained <em>generative</em> — why it continued to produce new solutions to new problems across its entire lifespan, rather than calcifying into rote repetition of received positions. A tradition preserved by oral transmission and social prestige alone would be expected to ossify, not to produce the Navya-Nyāya revolution of the 14th century or the Abhinavagupta synthesis of the 10th. Something about the tradition's internal architecture incentivized and enabled continued intellectual production. That architecture is the knowledge ecology this paper describes.</p>
+
+<hr class="abs-rule">
+
+<!-- ─── PAGE 2 ─── -->
+<div class="abs-running-head" id="abs-claim">
+  <span>Expanded Abstract · Page II of VI</span>
+  <span>The Central Claim and Its Novelty</span>
+</div>
+
+<div class="abs-proposition">
+  <p>The central claim of this paper is that the classical śāstric tradition functioned as a <em>self-correcting knowledge ecology</em> — a system in which individual disciplines were not epistemically isolated but embedded in a structured web of cross-disciplinary correction relationships, such that errors in any one discipline were detectable by other disciplines and subject to formal correction protocols whose operation can be empirically reconstructed from the surviving textual record. This claim has not previously been made in the literature, and its verification would require new primary research of a kind that no existing programme has undertaken.</p>
+</div>
+
+<p>The claim has three distinct components, each of which is independently assertable and independently falsifiable, and each of which carries its own scholarly stakes:</p>
+
+<ul class="abs-claims">
+  <li><strong>The epistemic interdependence claim:</strong> The sixteen śāstric disciplines were not epistemically isolated parallel sciences. Their validity claims were mutually dependent in structured ways — certain claims made by one discipline could only be sustained if claims made by a neighbouring discipline also held, and vice versa. The interdependence was not merely terminological (shared vocabulary) or institutional (shared scholars and spaces) but logical: the disciplines' core epistemological commitments stood in formal relationships of support, tension, and mutual constraint. This claim is supported by the bādhā cascade case studies (§8 and §13 of the main text) and is in principle testable through the citation network analysis proposed in Vector I.</li>
+
+  <li><strong>The structured correction claim:</strong> When claims made by different disciplines conflicted, the resulting correction process was not ad hoc but followed identifiable formal protocols — the pūrvapakṣa-siddhānta dialectical engine, the bādhā sublation hierarchy, and the empirical forcing mechanism described in §3. These protocols were not explicitly articulated as a unified meta-theory by the tradition itself; this paper's contribution is to name and formalize them for the first time. The protocols' existence is supported by the consistency of the correction processes visible across multiple independent case studies spanning 1,500 years of textual evidence.</li>
+
+  <li><strong>The ecological stability claim:</strong> The inter-disciplinary correction network was a primary mechanism of the tradition's long-term intellectual stability — not merely one factor among several, but the structural feature that distinguished the śāstric tradition's resilience from the fragility of traditions that lacked equivalent cross-disciplinary correction infrastructure. This is the strongest and most contested of the three claims; its verification would require a comparative study of traditions that possessed similar intellectual ambitions but lacked equivalent cross-disciplinary architecture, and it is therefore explicitly held as a hypothesis rather than a demonstrated conclusion in the current paper.</li>
+</ul>
+
+<div class="abs-pullquote">
+  "The Sanskrit grammatical tradition did not merely describe a language — it provided a universal syntactic validator for all claims made within that language. No Western intellectual tradition possesses an equivalent: a formal system that simultaneously generates correct expressions and flags incoherent ones, functioning as a background error-detector for all disciplines that use it as their medium."
+  <cite>— Main Text, §1: The Śāstric Metalanguage as Error-Detection Infrastructure</cite>
+</div>
+
+<p>The novelty of this claim deserves careful statement, because several related claims have been made in the existing literature and it is important not to overstate the present contribution by ignoring them. Jonardon Ganeri's work on "the lost age of reason" (2011) has documented the sophistication of inter-school philosophical engagement in the classical period. Bimal Krishna Matilal's extensive studies of Nyāya-Buddhist epistemological debate have mapped specific correction interactions in great detail. Sheldon Pollock's account of the "Sanskrit knowledge system" (2006) has gestured toward the systemic character of śāstric intellectual production. What none of these works has done is (a) treat the inter-śāstric correction network as a primary object of study in its own right, (b) propose a formal model of how corrections propagate through it, or (c) generate testable hypotheses about its network topology that could be investigated using the computational tools now available through Sanskrit NLP and the GRETIL corpus. The seventh-angle framework does all three.</p>
+
+<hr class="abs-rule">
+
+<!-- ─── PAGE 3 ─── -->
+<div class="abs-running-head" id="abs-ecology">
+  <span>Expanded Abstract · Page III of VI</span>
+  <span>The Knowledge Ecology Concept and Its Application</span>
+</div>
+
+<p>The term <em>ecology</em>, borrowed from the biological sciences, carries a precise technical meaning that is essential to the argument and should not be reduced to a vague analogy. Ecology studies not individual organisms but the dynamic relationships among organisms that produce stable, adaptive, self-regulating systems. The core insight of systems ecology — articulated in its modern form by Eugene Odum (1953) and further developed by Simon Levin's work on complex adaptive systems (1998) — is that the stability of an ecosystem is a property of the <em>network of relationships</em>, not of the individual components. A forest is resilient not because any individual tree is indestructible but because the web of relationships among trees, fungi, soil bacteria, insects, and atmospheric gases is structured in ways that allow the system to absorb perturbations and return to functional stability. The same logic, transposed to knowledge systems, yields the concept of an epistemic ecology.</p>
+
+<div class="abs-two-col">
+  <div>
+    <p>An epistemic ecology is a network of disciplines whose validity is maintained not by the internal consistency of each discipline alone but by the dynamic interactions among disciplines. Quine's "web of belief" (1951) approached this concept but remained static — a synchronic description of a belief system's architecture at a moment in time, with no account of the diachronic process by which errors are detected and corrections propagate. The śāstric knowledge ecology offers what Quine's model lacks: a 2,200-year laboratory experiment in how an epistemic ecology actually functions over time, under conditions that no Western intellectual tradition has faced with comparable severity.</p>
+    <p>Four structural properties are necessary and jointly sufficient for a knowledge network to qualify as an epistemic ecology in the sense used in this paper. These properties — redundancy, modularity, diversity, and regulated connectance — are borrowed from systems ecology but applied to knowledge systems with appropriate modifications. The śāstric tradition instantiates all four, and the analysis of how it instantiates them constitutes the theoretical core of §2 of the main text.</p>
+  </div>
+  <div>
+    <div class="abs-six-grid" style="grid-template-columns:1fr 1fr;gap:10px">
+      <div class="abs-six-cell">
+        <div class="asix-num">I</div>
+        <div class="asix-label">Redundancy</div>
+        <p>Multiple disciplines address the same fundamental questions from different angles — validity of testimony is addressed by Nyāya, Mīmāṃsā, Vyākaraṇa, Āyurveda, and Vedānta simultaneously.</p>
+      </div>
+      <div class="abs-six-cell">
+        <div class="asix-num">II</div>
+        <div class="asix-label">Modularity</div>
+        <p>Each discipline possesses its own mūlagrantha, commentarial tree, technical vocabulary, and institutional home — ensuring that the collapse of any one node does not cascade to all others.</p>
+      </div>
+      <div class="abs-six-cell">
+        <div class="asix-num">III</div>
+        <div class="asix-label">Diversity</div>
+        <p>Radically different foundational ontologies (Nyāya's pluralist realism, Advaita's non-dualism, Sāṃkhya's strict dualism) ensure the tradition is not dependent on any single metaphysical bet.</p>
+      </div>
+      <div class="abs-six-cell">
+        <div class="asix-num">IV</div>
+        <div class="asix-label">Regulated Connectance</div>
+        <p>Selective, scope-bounded inter-disciplinary borrowing — methodology but not metaphysics, logical tools but not theological conclusions — prevents perturbation cascades from destabilizing the whole.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>The most important — and most easily misunderstood — of these four properties is <em>regulated connectance</em>. Systems ecology shows that both too-low connectance (isolated, non-interacting species) and too-high connectance (every species tightly coupled to every other) are destabilizing. The śāstric tradition navigated between these failure modes with sophisticated disciplinary boundary management — borrowing across disciplines in ways that were selective, bounded, and explicitly scope-limited. The table in §2 of the main text (showing what each śāstra borrowed from its neighbours and, equally importantly, what it did not borrow) is among the most revealing pieces of evidence for this claim. Dharmaśāstra borrowed Mīmāṃsā's hermeneutic principles but not its denial of God; Āyurveda borrowed Sāṃkhya's guṇa framework but not its liberation soteriology; Vedānta borrowed Nyāya's syllogistic form but not its theistic conclusions. The pattern is consistent across every disciplinary pair examined: borrowing was not wholesale assimilation but targeted extraction of specifically useful components, with the borrowing discipline's own foundational commitments preserved intact.</p>
+
+<p>This disciplined selectivity was not accidental. It was the product of a shared understanding, never fully articulated but consistently practised, of what cross-disciplinary borrowing was for: not synthesis (the ambition of modern interdisciplinary research) but <em>augmentation</em> — strengthening each discipline's capacity to do its own work by importing specific tools from neighbouring disciplines without importing the neighbouring discipline's entire framework. The distinction between synthesis and augmentation is theoretically important and practically consequential: synthesis tends toward the dissolution of disciplinary boundaries (and with them, the modularity that makes the ecology stable), while augmentation preserves boundaries while enhancing functionality across them.</p>
+
+<hr class="abs-rule">
+
+<!-- ─── PAGE 4 ─── -->
+<div class="abs-running-head" id="abs-six-angles">
+  <span>Expanded Abstract · Page IV of VI</span>
+  <span>The Seventh Angle and Its Relationship to the Six Preceding</span>
+</div>
+
+<p>The relationship between the seventh angle proposed in this paper and the six angles of the preceding study requires precise formulation, because the seventh is not merely an addition to the six — it operates at a different logical level. The six existing angles are all first-order analytical perspectives: they study the śāstras directly, each from its own vantage point. The seventh angle is a second-order analytical perspective: it studies not the śāstras themselves but the <em>relationships among the śāstras</em>. This is not a trivial difference. A first-order study of Nyāya asks what Nyāya claims and how it justifies its claims. A second-order study of Nyāya asks how Nyāya's claims interact with the claims of Mīmāṃsā, Vedānta, and Vaiśeṣika — and what happens when they conflict. The first question can be answered without knowing anything about Mīmāṃsā, Vedānta, or Vaiśeṣika. The second cannot.</p>
+
+<div class="abs-six-grid">
+  <div class="abs-six-cell">
+    <div class="asix-label">First Angle — Textual</div>
+    <p>What does the primary text say? What is its manuscript tradition? What are the variant readings?</p>
+  </div>
+  <div class="abs-six-cell">
+    <div class="asix-label">Second Angle — Philosophical</div>
+    <p>What positions does the text defend? What is its internal argumentative structure? What are its core metaphysical commitments?</p>
+  </div>
+  <div class="abs-six-cell">
+    <div class="asix-label">Third Angle — Comparative</div>
+    <p>How do this text's positions compare with those of other Indian and non-Indian traditions on the same questions?</p>
+  </div>
+  <div class="abs-six-cell">
+    <div class="asix-label">Fourth Angle — Scientific</div>
+    <p>What do this text's empirical or mathematical claims look like in the light of contemporary science? What do they anticipate or miss?</p>
+  </div>
+  <div class="abs-six-cell">
+    <div class="asix-label">Fifth Angle — Historical</div>
+    <p>When was this text composed? How was it transmitted? How did its institutional context change over time?</p>
+  </div>
+  <div class="abs-six-cell">
+    <div class="asix-label">Sixth Angle — Epistemological</div>
+    <p>What does this text take to be valid knowledge? What are its pramāṇas? How does it adjudicate conflicts between its own sources?</p>
+  </div>
+</div>
+
+<p>Each of these six angles is an intra-disciplinary question: it can be answered, at least in principle, by a scholar with deep expertise in a single śāstric discipline and its relevant scholarly context. The seventh angle cannot be answered by any single-discipline specialist, because its object of study — the inter-śāstric correction network — is constituted by the relationships among disciplines, not by any individual discipline. This is why the seventh angle has not previously been addressed in the literature: not for lack of scholarly sophistication, but because the research programme it requires (cross-disciplinary expertise, computational corpus analysis, network science, and historical reconstruction) has only recently become achievable.</p>
+
+<div class="abs-proposition">
+  <p>The sixth angle asked, of each śāstra: how does <em>this</em> tradition maintain its own epistemic integrity? The seventh angle asks: how does the <em>network of traditions</em> maintain its collective epistemic integrity — and what happens when the maintenance mechanisms fail? The first question produces sixteen separate epistemological studies. The second produces a single unified theory of how a knowledge system of this complexity sustains itself across time.</p>
+</div>
+
+<p>It is worth noting what the seventh angle does not claim. It does not claim that the śāstric tradition was a unified system with a single coherent worldview — the reality of deep metaphysical disagreement among the schools is fully acknowledged and is indeed the precondition for the error-correction mechanisms the paper describes. It does not claim that the inter-śāstric correction network was formally designed by any identifiable set of scholars — it is an emergent property of the tradition's architecture, not a planned feature. And it does not claim that the tradition was in any sense epistemically superior to other major intellectual traditions — comparative evaluation of that kind is outside the scope of this paper. What it claims is narrower but more robust: that the śāstric tradition possessed identifiable structural features that produced error-correction dynamics observable in the textual record, and that the formal description of those features constitutes a contribution to the general theory of how knowledge systems sustain themselves over time.</p>
+
+<hr class="abs-rule">
+
+<!-- ─── PAGE 5 ─── -->
+<div class="abs-running-head" id="abs-vectors">
+  <span>Expanded Abstract · Page V of VI</span>
+  <span>The Six Research Vectors — Summary</span>
+</div>
+
+<p>The seventh-angle framework generates six research vectors — each a distinct empirically tractable research programme with its own methods, primary sources, and falsifiability conditions. The vectors are distributed across five modules of this white paper series; Vectors I and II are developed in detail in the present module. A brief summary of all six is provided here for orientation.</p>
+
+<div class="abs-vector-row">
+  <div class="avr-num">I</div>
+  <div class="avr-body">
+    <h5>Cross-Citation Error Signals — The Śāstric Citation Network</h5>
+    <p>Every disagreeing citation of one śāstra by another is a directed error signal — an explicit claim that a specific position in the cited discipline requires correction. Systematically mapping all such signals across the GRETIL corpus (~35 million Sanskrit tokens) would produce the first formal network map of inter-śāstric error-detection activity. The hypothesis is that this network has a structured core-periphery topology, with specific disciplines (Nyāya, Mīmāṃsā, Vyākaraṇa) functioning as primary error-detectors and others as primary correction targets. The network's temporal dynamics — how the correction topology changed over 2,200 years — would constitute a complete intellectual history of the tradition told through its own self-correction activity. Stage 1 (explicit citation extraction) is immediately tractable using Sanskrit NLP tools; Stage 2 (implicit citation annotation) requires expert multi-disciplinary annotation; Stage 3 (network analysis) requires standard graph-theoretic methods applied to the resulting directed weighted graph.</p>
+  </div>
+</div>
+<div class="abs-vector-row">
+  <div class="avr-num">II</div>
+  <div class="avr-body">
+    <h5>The Bādhā Cascade Theory — Formal Correction Propagation</h5>
+    <p>The concept of <span class="skt-inline">बाधा</span> (sublation) — developed by Nyāya and Advaita Vedānta as an account of perceptual error correction — operates at the inter-śāstric level as a cascade: a correction in one discipline propagates through the network, forcing revisions in connected disciplines, which in turn force revisions in further-connected disciplines. This paper develops the first formal theory of the bādhā cascade, distinguishing three types (upward, downward, and lateral) and documenting four historical cases in detail: the Nāgārjuna cascade (c. 150–400 CE), the Dignāga correction (c. 480–540 CE), the Āryabhaṭa forcing (499 CE), and the Abhinavagupta synthesis (c. 1000 CE). The extended case study in §13 of the main text documents a fifth and most complete cascade: the Navya-Nyāya upgrade's propagation through five śāstric disciplines over 250 years.</p>
+  </div>
+</div>
+<div class="abs-vector-row">
+  <div class="avr-num">III</div>
+  <div class="avr-body">
+    <h5>The Commentarial Stack as Error-Correction Archive — The Duruktam Corpus</h5>
+    <p>The bhāṣya-vārttika-ṭīkā commentarial hierarchy is not merely explanatory but is the tradition's primary error-correction archive. Each commentarial layer identifies errors in the previous layer using the classical tripartite classification of uktam (correctly stated), anuktam (omitted), and duruktam (misstated). A systematic extraction of all duruktam-function passages across twelve primary vārttika texts (approximately 850,000 Sanskrit verses in the GRETIL corpus) would yield the most direct empirical record of the tradition's self-identified errors. Preliminary analysis of Kātyāyana's vārttikas on Pāṇini suggests a duruktam rate of approximately 15.8% — if representative, the total Duruktam Corpus would contain in excess of 130,000 formal error-corrections. This corpus, once compiled, would constitute the primary source for any future study of the śāstric tradition's self-correction dynamics.</p>
+  </div>
+</div>
+<div class="abs-vector-row">
+  <div class="avr-num">IV</div>
+  <div class="avr-body">
+    <h5>Productive Silence and the Topology of Disciplinary Avoidance</h5>
+    <p>The absence of citation is as structured as its presence. Disciplines with overlapping subject matter that systematically avoid citing each other are engaging in a deliberate epistemic boundary management strategy — one that prevents specific error modes from arising rather than correcting them after the fact. Four types of productive silence are identified: authority-protective, competitive-niche, methodological-incommensurability, and precautionary. The paradigmatic case is the mutual silence between Dharmaśāstra and Āyurveda, each of which possessed the knowledge necessary to engage with the other's domain but recognised that cross-citation would destabilize the authority structures on which both disciplines depended. Mapping the full topology of disciplinary silences — the absence network complementary to the citation network of Vector I — would reveal the tradition's error-prevention mechanisms alongside its error-correction mechanisms.</p>
+  </div>
+</div>
+<div class="abs-vector-row">
+  <div class="avr-num">V</div>
+  <div class="avr-body">
+    <h5>The Pāṇini Recursion — Grammar as the Ecology's Kernel</h5>
+    <p>Pāṇini's Aṣṭādhyāyī functioned as the knowledge ecology's operating system: every claim made in Sanskrit was simultaneously subject to grammatical audit. A philosophical claim requiring a grammatically anomalous construction signals potential conceptual incoherence — the grammar becomes an impossibility-proof generator for claims that exceed the expressive capacity of Sanskrit's structural ontology. Three specific cases document this function: the Vyāḍi-Vājapyāyana dispute (grammar encoding substance-property ontology), Bhartṛhari's sphoṭa problem (grammar detecting a tension within its own generative account), and Nāgojibhaṭṭa's 18th-century Paribhāṣenduśekhara (the tradition formalizing the rules for extending Pāṇini to cases he had not anticipated). No Western intellectual tradition possesses an equivalent kernel: a formal system that simultaneously generates correct expressions and flags incoherent ones across all the disciplines that use it as their medium.</p>
+  </div>
+</div>
+<div class="abs-vector-row">
+  <div class="avr-num">VI</div>
+  <div class="avr-body">
+    <h5>The Rasa-Brahman Interface — Aesthetics as Epistemological Forcing Function</h5>
+    <p>The Nāṭyaśāstra's rasa theory functioned as the tradition's most powerful probe of the limits of existing metaphysical frameworks, because aesthetic experience presents phenomenological data that no purely intellectual framework can dismiss. The experience of rasa in the theatre is simultaneously universally communicable, intensely personal, independent of personal emotional history, and generative of a kind of knowing that ordinary cognition does not produce — a combination that no single metaphysical school in the tradition could accommodate without revision. The cascade initiated by Abhinavagupta's Abhinavabhāratī, which moved from aesthetic theory to consciousness metaphysics to philosophy of language to the correction of Advaita Vedānta's account of liberation, demonstrates that the tradition's error-correction activity extended across domains conventionally considered peripheral to its philosophical core.</p>
+  </div>
+</div>
+
+<hr class="abs-rule">
+
+<!-- ─── PAGE 6 ─── -->
+<div class="abs-running-head" id="abs-stakes">
+  <span>Expanded Abstract · Page VI of VI</span>
+  <span>Scholarly Stakes — What This Programme Would Establish</span>
+</div>
+
+<p>The scholarly stakes of the seventh-angle research programme are considerable, and they operate simultaneously in several distinct fields. It is worth making them explicit, because the programme requires resources and institutional partnerships that will only be committed if the stakes are clear to the funding bodies and partner institutions whose support the programme solicits.</p>
+
+<div class="abs-impact-row">
+  <div class="abs-impact-item">
+    <div class="aii-head">For Indological Studies</div>
+    <p>The Śāstric Citation Network (ŚCN), once built, would be the most comprehensive primary research tool for Sanskrit intellectual history since the GRETIL corpus itself. It would make traceable, for the first time, the actual intellectual influence pathways that existing scholarship has mapped only impressionistically. Every future study of how a specific philosophical school or text relates to its intellectual context would be able to ground its claims in citation data rather than scholarly intuition.</p>
+  </div>
+  <div class="abs-impact-item">
+    <div class="aii-head">For History of Science</div>
+    <p>The documentation of Āryabhaṭa's 300-year resistance period as an instance of a general empirical-forcing mechanism would make a significant contribution to the history and philosophy of science — specifically to the debate about how scientific revolutions propagate through resistant institutional structures. Thomas Kuhn's account of paradigm shifts has no adequate account of the multi-century resistance period; the śāstric case study offers one.</p>
+  </div>
+  <div class="abs-impact-item">
+    <div class="aii-head">For Epistemology and Philosophy of Science</div>
+    <p>The formal Bādhā Cascade Theory, if confirmed by the citation network data, would constitute a new contribution to the philosophy of inter-disciplinary knowledge integration — a topic of increasing urgency as contemporary science faces the epistemological problems generated by extreme disciplinary specialization. The śāstric model offers a historically tested alternative to both the synthesis model (Consilience) and the isolation model (disciplinary autonomy).</p>
+  </div>
+  <div class="abs-impact-item">
+    <div class="aii-head">For Research Policy</div>
+    <p>The six operationalizable lessons derived from the knowledge ecology model (§14 of the main text) address current failures in research management that funding bodies in India (SERB, DST, ICSSR) and internationally are actively trying to solve: reproducibility, interdisciplinary integration, institutional resilience, and the maintenance of cumulative error-correction records. The śāstric model offers concrete, historically grounded recommendations rather than abstract principles.</p>
+  </div>
+</div>
+
+<p>Beyond these specific disciplinary stakes, the programme carries a broader intellectual significance that should be stated without false modesty. The standard history of scientific methodology — from Aristotle through Bacon and Descartes to the twentieth-century philosophy of science — is almost entirely drawn from the Western intellectual tradition. The śāstric knowledge ecology represents a 2,200-year experiment in scientific methodology that is qualitatively different from this tradition: it is non-individualist (knowledge is produced by disciplines, not by individual geniuses), non-progressive in the linear sense (it has no single directional trajectory toward a fixed endpoint), and structurally resilient in ways that the Western tradition — which has shown itself capable of producing extraordinary scientific advances but also of catastrophic self-closure (scholastic Aristotelianism, Lysenkoist biology, pre-replication-crisis social psychology) — has not consistently achieved.</p>
+
+<p class="abs-clearfix">
+<span class="abs-marginal">
+  <span class="am-head">A note on scope</span>
+  This abstract has not attempted to summarize all arguments in the main text. Sections §15 (Disputed Cases) and the formal mathematical specification of the citation graph (§6) are omitted here; they require the main text's full technical development. The abstract is designed to orient the reader to the paper's central concerns and to be independently comprehensible to the specialist reader who has not yet read the main text.
+</span>
+The deepest stake of this programme, therefore, is not the production of new knowledge about the Indian intellectual tradition — though it will produce that, in abundance. It is the recovery of a model of knowledge production that the global scholarly community urgently needs. The crisis of contemporary research — reproducibility failures in psychology, physics, and medicine; the collapse of interdisciplinary dialogue behind disciplinary paywalls; the concentration of research resources in a small number of institutional centres whose failure would be catastrophic; the loss of cumulative error-correction records as journals cycle through editorial teams with no institutional memory — is precisely the kind of crisis that the śāstric knowledge ecology was architected to prevent. The tradition that lasted two millennia under conditions that would have destroyed any structurally fragile knowledge system has something to teach a contemporary research ecosystem that has lasted three centuries and is already showing signs of structural fatigue.</p>
+
+<p>This white paper series does not claim that the śāstric knowledge ecology can be transplanted wholesale into contemporary research institutions — the historical, cultural, and institutional distance is too great for any such simple transfer to be possible or desirable. What it claims is more modest and more useful: that the formal properties of the śāstric architecture — redundancy, modularity, diversity, regulated connectance, shared metalanguage infrastructure, structured adversarial review, empirical forcing mechanisms, and cumulative error-correction archives — are general properties of stable epistemic ecologies that can be instantiated in contemporary research contexts with contemporary tools and institutional forms. The programme proposed in this paper is designed to extract those formal properties from their historical instantiation and make them available for adaptation by a research ecosystem that needs them.</p>
+
+<div class="abs-pullquote">
+  "The tradition that lasted two millennia under conditions that would have destroyed any structurally fragile knowledge system has something to teach a contemporary research ecosystem that has lasted three centuries and is already showing signs of structural fatigue."
+  <cite>— Expanded Abstract, Page VI</cite>
+</div>
+
+<div class="panel gold" style="margin-top:36px">
+  <h4>Keywords and Indexing Terms</h4>
+  <p style="font-size:14px;color:var(--dim);line-height:1.75">
+    Śāstric knowledge systems · inter-disciplinary correction networks · bādhā cascade theory · pūrvapakṣa dialectics · Sanskrit NLP · GRETIL corpus analysis · Śāstric Citation Network (ŚCN) · Duruktam Corpus · epistemic ecology · Navya-Nyāya · Pāṇini's Aṣṭādhyāyī · philosophy of interdisciplinary science · Indian epistemology · knowledge system resilience · commentarial tradition · vyākaraṇa as validator · rasa theory · Abhinavagupta cascade · productive silence topology · research policy · complex adaptive systems · Indian intellectual history · history of science · cross-disciplinary citation analysis
+  </p>
+</div>
+
+<div class="fnav" style="margin-top:50px;border-top:1px solid var(--border);padding-top:18px;display:flex;justify-content:space-between;align-items:center">
+  <span style="color:var(--faint);font-size:12px">Expanded Abstract · Module I · Śāstra Knowledge Ecology</span>
+  <a href="#cover" style="color:var(--gold);text-decoration:none;font-family:'Cinzel',serif;font-size:12px;letter-spacing:.05em">↑ Return to Cover</a>
+</div>
+
+</div><!-- end #expanded-abstract -->
 </body>
 </html>
