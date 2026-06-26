@@ -2077,5 +2077,54 @@ div.abs-clearfix {
   console.log('[SāstraFix] Page VI alignment corrected.');
 }());
 </script>
+  <!-- ════════════════════════════════════════════════════════
+     NAV FIX · Śāstra Knowledge Ecology
+     Paste this entire block just before </body>
+     Fixes: sidenav text cutoff for long section titles
+════════════════════════════════════════════════════════ -->
+
+<style id="sastra-nav-fix">
+
+/* ── 1. Widen the sidenav to accommodate longer titles ── */
+.sidenav {
+  width: 300px;
+}
+
+/* ── 2. Push main content to match the wider nav ── */
+.main-wrap {
+  margin-left: 300px;
+}
+
+/* ── 3. Allow nav links to wrap onto two lines instead of clipping ── */
+.sn-link {
+  white-space: normal;
+  line-height: 1.45;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  word-break: break-word;
+}
+
+/* ── 4. Make the brand header also respect the new width ── */
+.sidenav .sn-brand {
+  padding: 0 16px 16px;
+}
+
+/* ── 5. Module pills row — tighten slightly so they fit ── */
+.module-pills {
+  padding: 10px 14px;
+}
+
+/* ── 6. Group labels — small left padding adjustment ── */
+.sn-group-label {
+  padding: 8px 14px 3px;
+}
+
+/* ── 7. On medium screens where sidenav already hides, no change needed ── */
+@media (max-width: 900px) {
+  .sidenav  { width: 300px; }  /* hidden anyway */
+  .main-wrap { margin-left: 0; }
+}
+
+</style>
 </body>
 </html>
